@@ -93,4 +93,62 @@ public class TurtleDemo
         crush.forward(50);
         
     }
+    
+    public static void drawLine()
+    {
+        /*
+         * Objects are entities in a program.
+         *      Objects have attributes.
+         *      Objects are manipulated by invoking methods.
+         *      
+         *  in the previous method, ocean and crush are variables that reference objects
+         *  
+         *  Classes describe a collection of objects. (A class is a template for objects.)
+         *      All objects of a class have the same behavior (methods)
+         *          and they have the same type of attributes
+         *          (but they may have different values for those attributes).
+         *          
+         *  World and Turtle are classes.
+         */
+        
+        World ocean = new World();
+        
+        /*
+         * We use the new operator to construct (create, instantiate) an object.
+         * 
+         *  The class of the object is specified immediately after the new operator
+         *      (e.g., Turtle).
+         *      
+         *  If we need to pass additional information to construct the object,
+         *      arguments are specified in parentheses after the class (e.g., ocean).
+         */
+        Turtle crush = new Turtle(ocean);
+        
+        /*
+         * Variables store values to be used later.
+         *      Variables have a type (e.g., int, Turtle),
+         *          a name (e.g., width, crush),
+         *          and a value (e.g., 20, ???).
+         */
+        int width;          // declaring a variable
+        width = 20;         // assigning a value to a variable
+        int xPosition = 50; // declaring and assigning a value to a varible
+        
+        /*
+         * Java has several primitive data types:
+         *      boolean holds a value of true or false
+         *      int holds an integer number
+         *      double holds a real number (floating point)
+         *      char holds a single character
+         */
+        
+        // here is a boolean
+        boolean isSummer = true;            // false
+        
+        // here is a double
+        double salesTaxRate = 0.0775;
+        
+        // here is a char
+        char letter = 'c';
+    }
 }
