@@ -150,5 +150,32 @@ public class TurtleDemo
         
         // here is a char
         char letter = 'c';
+        
+        /*
+         * When invoking methods, we use the dot operator (i.e., '.')
+         *      to invoke methods on an object.
+         *  
+         *  Some methods take no arguments, but we still have parentheses
+         *      (e.g., penDown).
+         *      
+         *  Some methods take one or more arguments (e.g., forward).
+         *      Multiple arguments are separated by commas.
+         *      
+         *  Mutator methods modify the state (i.e., values of attributes)
+         *      of the object. penDown, forward, setPenColor are all
+         *      mutator methods.
+         */
+        crush.penDown();
+        crush.forward(25);
+        crush.setPenColor(Color.RED);
+        crush.forward(25);
+        
+        /*
+         * Accessor methods return the value of an attribute of the object.
+         *      The state of the object does not change.
+         *      
+         *  getPenWidth is an accessor method.
+         */
+        int penWidth = crush.getPenWidth();
     }
 }
